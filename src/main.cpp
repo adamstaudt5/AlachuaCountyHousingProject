@@ -13,17 +13,10 @@
 int main()
 {
 	readCSV read;
-	std::string const path = "C:/Users/adams/AlachuaCountyHousingProject/data/NAL11F202201.csv";
+	std::string const path = "../AlachuaCountyHousingProject/data/NAL11F202201.csv";
 
 	auto start = std::chrono::high_resolution_clock::now();
 	std::vector<Property> properties = read.CSVread(path);
-
-	std::ifstream inputFile(path);
-	if (!inputFile.is_open()) {
-		std::cerr << "Error opening file: " << path << std::endl;
-		return 1;
-	}
-
 	auto end = std::chrono::high_resolution_clock::now();
 	auto fileReadTime = std::chrono::duration_cast<std::chrono::seconds>(end - start).count();
 
