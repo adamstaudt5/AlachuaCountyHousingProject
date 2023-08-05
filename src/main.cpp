@@ -7,7 +7,7 @@
 #include "property.h"
 #include "readCSV.h"
 #include "sort.h"
-#include "rapidcsv.h"
+#include "lib/rapidcsv.h"
 
 int main()
 {
