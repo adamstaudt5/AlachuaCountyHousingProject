@@ -8,12 +8,12 @@
 #include "readCSV.h"
 #include "sort.h"
 #include "../lib/rapidcsv.h"
-#include "../data/NAL11F202201.csv"
+//#include "../data/NAL11F202201.csv"
 
 int main()
 {
 	readCSV read;
-	std::string const path = "NAL11F202201.csv";
+	std::string const path = "../data/NAL11F202201.csv";
 
 	auto start = std::chrono::high_resolution_clock::now();
 	std::vector<Property> properties = read.CSVread(path);
