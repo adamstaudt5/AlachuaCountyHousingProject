@@ -11,11 +11,9 @@ class Property
     std::string propertyType;
 
 public:
-    Property()
-        : marketValue(0), zipCode(0), yearBuilt(0), address(""), city(""), propertyType("") {}
+    Property();
 
-    Property(int MARKETVALUE, int ZIPCODE, int YEARBUILT, std::string ADDRESS, std::string CITY, std::string PROPERTYTYPE)
-        : marketValue(MARKETVALUE), zipCode(ZIPCODE), yearBuilt(YEARBUILT), address(ADDRESS), city(CITY), propertyType(PROPERTYTYPE) {};
+    Property(int MARKETVALUE, int ZIPCODE, int YEARBUILT, std::string ADDRESS, std::string CITY, std::string PROPERTYTYPE);
 
     bool operator==(const Property& other) const;
 
