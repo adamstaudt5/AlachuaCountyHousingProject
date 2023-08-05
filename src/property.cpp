@@ -1,5 +1,11 @@
 #include "property.h"
 
+Property::Property()
+    : marketValue(0), zipCode(0), yearBuilt(0), address(""), city(""), propertyType("") {}
+
+Property::Property(int MARKETVALUE, int ZIPCODE, int YEARBUILT, std::string ADDRESS, std::string CITY, std::string PROPERTYTYPE)
+    : marketValue(MARKETVALUE), zipCode(ZIPCODE), yearBuilt(YEARBUILT), address(ADDRESS), city(CITY), propertyType(PROPERTYTYPE) {};
+
 bool Property::operator==(const Property& other) const
 {
     return marketValue == other.marketValue &&
