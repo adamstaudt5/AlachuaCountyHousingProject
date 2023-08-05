@@ -22,6 +22,7 @@ int main()
 	if (!inputFile.is_open()) {
 		std::cerr << "Error opening file: " << path << std::endl;
 		return 1;
+	}
 
 	auto end = std::chrono::high_resolution_clock::now();
 	auto fileReadTime = std::chrono::duration_cast<std::chrono::seconds>(end - start).count();
