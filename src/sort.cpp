@@ -132,10 +132,15 @@ void insertProperty(std::vector<Property>& properties, const Property& newProper
 void deleteProperty(std::vector<Property>& properties, const Property& newProperty)
 {
     auto it = std::lower_bound(properties.begin(), properties.end(), newProperty,
-        [](const Property& a, const Property& b) { return a.getMarketValue() < b.getMarketValue(); });
+        [](const Property& a, const Property& b) 
+        {
+            return a.getMarketValue() < b.getMarketValue();
+        });
 
-    if (it != properties.end() && *it == newProperty)
+    // Check if the element is found and equal to the target
+    if (it != properties.end() && *it == newProperty) 
     {
+        // Erase the element from the vector
         properties.erase(it);
     }
 }
