@@ -2,7 +2,7 @@
 #include <vector>
 #include "property.h"
 #include "readCSV.h"
-#include "lib/rapidcsv.h"
+#include "../lib/rapidcsv.h"
 
 namespace rapidcsv
 {
