@@ -1,6 +1,7 @@
 #include <vector>
 #include <string>
 #include <stack>
+#include <algorithm>
 #include "property.h"
 #include "sort.h"
 
