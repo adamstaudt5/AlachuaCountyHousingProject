@@ -13,7 +13,7 @@
 int main()
 {
 	readCSV read;
-	std::string const path = "../AlachuaCountyHousingProject/data/NAL11F202201.csv";
+	std::string const path = "../data/NAL11F202201.csv";
 
 	auto start = std::chrono::high_resolution_clock::now();
 	std::vector<Property> properties = read.CSVread(path);
