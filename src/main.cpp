@@ -27,6 +27,7 @@ int main()
 	// Prints the last Property in the vector
 	if (!properties.empty())
 	{
+		std::cout << std::endl;
 		const Property& last = properties.back();
 		std::cout << "Property Type: " << last.getPropertyType() << std::endl;
 		std::cout << "Value: " << last.getMarketValue() << std::endl;
@@ -34,6 +35,7 @@ int main()
 		std::cout << "Address: " << last.getAddress() << std::endl;
 		std::cout << "City: " << last.getCity() << std::endl;
 		std::cout << "ZIP: " << last.getZipCode() << std::endl;
+		std::cout << std::endl;
 	}
 
 	/*********************************************************************************/
